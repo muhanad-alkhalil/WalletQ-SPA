@@ -1,0 +1,108 @@
+<div class=" content">
+  <div class=" row" style="margin-top: 130px;">
+    <div class=" col-md-4">
+
+    </div>
+    <div class=" col-md-4">
+      <div class=" card" style="padding: 20px 20px 0px 20px;">
+        <div class=" card-header"><h5 class=" title">New account</h5></div>
+        <div class=" card-body">
+          <form #loginform="ngForm" (ngSubmit)="register()">
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label>Name </label>
+                  <input
+                    class=" form-control"
+                    placeholder="First name"
+                    type="text"
+                    name="Name"
+                    [(ngModel)]="model.Name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="Surname"> Surname </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Surname"
+                    type="email"
+                    name="Surname"
+                    [(ngModel)]="model.Surname"
+                  />
+                </div>
+              </div>
+            </div>
+            
+              <div class=" row">
+
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="password"> Password </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Password"
+                    type="password"
+                    name="password"
+                    [(ngModel)]="model.Password"
+                  />
+                </div>
+              </div>
+
+            </div>
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="email"> email: </label>
+                  <input
+                    class=" form-control"
+                    placeholder="youremail@email.com"
+                    type="email"
+                    name="email"
+                    [(ngModel)]="model.Email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="Phone"> Phone: </label>
+                  <input
+                    class=" form-control"
+                    placeholder="+XXXXXXXXXXX"
+                    type="text"
+                    name="Phone"
+                    [(ngModel)]="model.PhoneNumber"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="Phone"> Date of birth: </label>
+                  <input
+                    class=" form-control"
+                    type="date"
+                    name="date"
+                    [(ngModel)]="model.DateOfBirth"
+
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <button class=" btn btn-fill btn-danger" type="submit">Register</button>            
+          </form>
+        </div>
+        <div class=" card-footer">
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>

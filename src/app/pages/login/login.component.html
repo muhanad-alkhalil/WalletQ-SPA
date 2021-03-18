@@ -1,0 +1,69 @@
+<div class=" content">
+  <div class=" row" style="margin-top: 130px;">
+    <div class=" col-md-4">
+
+    </div>
+    <div class=" col-md-4">
+      <div class=" card" style="padding: 20px 20px 0px 20px;">
+        <div class=" card-header"><h5 class=" title">Login</h5></div>
+        <div class=" card-body">
+          <form (ngSubmit)="login()" #loginform="ngForm">
+            <div class=" row">
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="email"> Email address </label>
+                  <input
+                    class=" form-control"
+                    placeholder="mike@email.com"
+                    type="email"
+                    name="email"
+                    [(ngModel)]="model.Email"
+                  />
+                </div>
+              </div>
+            </div>
+              <div class=" row">
+
+              <div class=" col-md-12 pl-md-1">
+                <div class=" form-group">
+                  <label for="password"> Password </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Password"
+                    type="password"
+                    [(ngModel)]="model.Password"
+                    name="password"
+
+                  />
+                </div>
+              </div>
+
+            </div>
+
+ 
+
+            <div class=" row">
+              <div class=" col-md-6">
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                      <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-6">
+                <a  [routerLink]="['/register']">New account</a>
+              </div>
+            </div>
+            
+            <button class=" btn btn-fill btn-danger" type="submit">login</button>
+          </form>
+        </div>
+        <div class=" card-footer">
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
