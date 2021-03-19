@@ -7,12 +7,15 @@ import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.compon
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { LoginComponent } from "./pages/login/login.component";
 import { RegisterComponent } from "./pages/register/register.component";
+import { AuthRoutGuard } from "./_Guards/auth-rout.guard";
 
 const routes: Routes = [
 
   {
     path: "",
     component: AdminLayoutComponent,
+    runGuardsAndResolvers: "always",
+    canActivate: [AuthRoutGuard],
     children: [
       {
         path: "",
