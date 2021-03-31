@@ -1,3 +1,4 @@
+import { PaymentComponent } from './../../pages/payment/payment.component';
 import { Routes } from "@angular/router";
 
 import { DashboardComponent } from "../../pages/dashboard/dashboard.component";
@@ -17,6 +18,8 @@ export const AdminLayoutRoutes: Routes = [
   { path: "tables", component: TablesComponent },
   { path: "typography", component: TypographyComponent },
   { path: "wallet", component : WalletComponent },
+  { path: "payment/:id", component : PaymentComponent },
+  { path: "payment", component : PaymentComponent },
   {path: "", redirectTo: "wallet"}
   // { path: "rtl", component: RtlComponent }
 ];

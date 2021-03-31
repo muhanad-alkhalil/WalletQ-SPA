@@ -1,3 +1,4 @@
+import { PaymentComponent } from './../../pages/payment/payment.component';
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
@@ -26,6 +27,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
   declarations: [
     DashboardComponent,
     UserComponent,
+    PaymentComponent,
     TablesComponent,
     IconsComponent,
     TypographyComponent,

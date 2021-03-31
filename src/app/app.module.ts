@@ -46,7 +46,7 @@ export function tokenGetter() {
      AdminLayoutComponent,
       AuthLayoutComponent,
       RegisterComponent,
-      LoginComponent
+      LoginComponent,
     ],
   providers: [],
   bootstrap: [AppComponent]
